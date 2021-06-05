@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi App</title>
+    <!-- stylesheet es de tipo css -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!-- div (capa general) es lo mas usado, determina la estructura -->
+    <!-- el id sirve para referenciar en css -->
+    <div id="main-container">
+        <!-- header es para seccionar el logo, nombre -->
+        <header>
+            <div id="menu">
+                <!-- ul es unordered list -->
+                <ul>
+                    <!-- li es line item -->
+                    <!-- a es etiqueta para link -->
+                    <li id="logo">
+                        <a href="#">
+                            <img src="./img/logo.png" alt="">
+                        </a>
+                    </li>
+                    <li><a href="#features">Home</a></li>
+                    <li><a href="#contact">Fitures</a></li>
+                </ul>
+            
+            </div>
+            <main>
+                <!-- class es como id pero el nombre se puede usar -->
+                <div class="text">
+                    <h1>Mi Primera App!</h1>
+                    <p>
+                        Conoce la mejor aplicacion para poder gestionar cursos
+                    </p>
+                    <p>
+                        <button>Empezar ahora</button>
+                    </p>
+                </div>
+                <div class="image">
+                    <img src="./img/phone.png" width="450">
+                </div>
+                
+            </main>
+        </header>
+        <div class="section" id="features">
+            <div class="layout layout-left">
+                <div class="text">
+                    <h3>Funcionalidad que de verdad sirva</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, velit vel quisquam unde placeat quos quidem illo autem voluptate! Iste sapiente consequuntur mollitia necessitatibus ipsa laboriosam nulla consequatur provident ducimus.</p>
+                </div>
+                <div class="image">
+                    <img src="./img/draw.png" alt="">
+                </div>
+            </div>
+            <div class="layout layout-rigth">
+                <div class="image">
+                    <img src="./img/mobile_screen.png" alt="">
+                </div>
+                <div class="text">
+                    <h3>Funcionalidad que de verdad sirva</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, velit vel quisquam unde placeat quos quidem illo autem voluptate! Iste sapiente consequuntur mollitia necessitatibus ipsa laboriosam nulla consequatur provident ducimus.</p>
+                </div>
+                
+            </div>
+        </div>
+        <div class="section" id="contact">
+
+        </div>
+        <foote>
+            Vida MRR º Derechos Reservados
+        </footer>
+        
+    </div>
+    
+        
+</body>
+</html>

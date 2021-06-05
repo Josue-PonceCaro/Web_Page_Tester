@@ -1,0 +1,113 @@
+*{
+    /* margenes al rededor de la caja, el borde */
+    margin: 0px;
+    /* margen entre cada elemento dentro de la pagina */
+    padding: 0px;
+}
+/* Establecemos los estilos del título 1 */
+h1{
+    font: bold 20px verdana, sans-serif;
+}
+/* Establecemos los estilos del título 2 */
+h2{
+    font: bold 34px verdana, sans-serif;
+}
+/* Indica que los elementos afectados por la regla serán posicionados uno sobre otro
+ a menos que especifiquemos algo diferente mas adelate */
+header, section,footer,aside,nav,article,figure,figcaption,hgroup{
+    display: block;
+}
+/* centrar el cuerpo */
+body{
+    /* solo afecta los contenidos inline como textos o imagenes */
+    /* cumple la función de centrar el contenido del cuerpo */
+    text-align: center;
+}
+/* caja principal que nos ayuda con la construcccion de nuestro modelo de caja */
+#agrupar{
+    /* ancho de la página: 960px es un valor comun, que puede cambiar con el tiempo */
+    width: 960px;
+    /* se utiliza para agrupar los bloques. puede tener cuatro valores: 
+       superior, derecho, inferior e izquierdo es ese orden. podemos escribir los 4 valores
+       sin embargo si solo se indica dos, los restantes tomarán el mismo valor */
+    /* 15 px de margen para las parte superior e inferior */
+    /* margen izquierdo y derecho es calculado automáticamente en base al tamaño del cuerpo */
+    margin: 15px auto;
+    /* el objetivo es alinear nuevamente a la izquierda */
+    text-align: left;
+}
+/* CABECERA */
+#cabecera{
+    background-color: #e6db0b;
+    /* borde sólido de un 1px */
+    border: 1px solid #e47171;
+    /* Padding indica el margen interior */
+    padding: 20px;
+}
+#menu{
+    background-color: #cccccc;
+    padding: 5px 15px;
+    /* text-align: center; */
+}
+#menu li{
+    /* para mostrar los elementos de la lista, en fila, ya que por defecto se muestra en columnas */
+    display: inline-block;
+    list-style: none;
+    /* pading trabaja como pargin, afecta arriba, derecha, abajo e izquierda */
+    padding: 5px 35px;
+    font: bold 14px verdana, sans-serif; 
+}
+#seccion{
+    /* paracolocar el bloque a la izquierda */
+    float: left;
+    width: 660px;
+    margin: 10px;
+    padding: 1px 0px;
+    /* border: 1px solid red; */
+}
+#columna{
+    /* para colocar el bloque a la derecha */
+    float: right;
+    width: 220px;
+    /* el bloque entre bloques */
+    margin: 0px;
+    /* elementos dentro del bloque */
+    padding: 20px 10px;
+    background: #cccccc;
+    /* border: 1px solid chartreuse; */
+}
+#pie{
+    /* para ubicar el bloque debajo del ultimo elemento asignado */
+    clear: both;
+    text-align: center;
+    padding: 0px;
+    border-top: 2px solid #999999;
+    background-color: black;
+    color: white;
+}
+article{
+    background: #493737;
+    border: 1px solid #999999;
+    padding: 20px;
+    margin-bottom: 15px;
+    color: aliceblue;
+}
+article footer{
+    text-align: right;
+}
+time{
+    color: aquamarine;
+}
+figcaption{
+    text-align: center;
+    font: italic 14px verdana, sans-serif;
+}
+div{
+    width: 100px;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #000000;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}

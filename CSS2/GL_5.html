@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <form action="procesar.php">
+            <p><label >Texto Tarea: <textarea name="texto" id="texto" cols="30" rows="10"></textarea></label></p>
+            <p><input type="image" src="img/send.png" height="50px" width="50px"></p>
+        </form>
+        <p>
+            <label for="listado">Libros:</label>
+            <select name="libros" id="listado">
+                <option value="1">IT</option>
+                <option value="2">IT Back</option>
+                <option value="3">IT Revorn</option>
+                <option value="4">IT The End</option>
+            </select>
+        </p>
+        <p>
+            <datalist id="datos">
+                <option value="123456" label="Telefono 1"></option>
+                <option value="789098" label="Telefono 2"></option>
+            </datalist>
+            <p><label >Telefonos: <input type="tel" name="telefono" list="datos"></label></p>
+        </p>
+    </section>
+</body>
+</html>

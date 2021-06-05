@@ -1,0 +1,53 @@
+/* p[name^="mi"] { font-size: 20px; }
+p[name$="mi"] { font-size: 30px; }
+p[name*="mi"] { color: teal; } */
+
+p[class*="to"]{
+    font-size: 60px;
+}
+/* La pseudo clase ":nth-child()" permite encontrar a un hijo en específico*/
+/* Se interpreta como "el hijo en la posicioón ...", posición que viene definido dentro de "()" */
+
+/* "p:nth-child(even)" se refiere a todos los hijos "p" en posición PAR */
+p:nth-child(even){
+    background: violet;
+}
+/* "p:nth-child(even)" se refiere a todos los hijos "p" en posición IMPAR */
+p:nth-child(odd){
+    background:blue ;
+}
+/* "p:nth-child(2)" se refiere al hijo "p" en la posición "2" */
+p:nth-child(2){
+    background: tomato;
+}
+/* "*" AFECTA A TODOS LOS ELEMENTOS DEL DOCUMENTO */
+*{
+    margin: 5px;
+}
+/* not se utiliza para realizar una negación, en otras palabras sería una excepción */
+:not(.mitexto4){
+    margin:2px;
+}
+
+p{
+    margin: 20px;
+}
+/* "p:first-child" afecta únicamente al primer hijo "p" */
+/* "p:only-child" afecta un elemento siempre y cuando sea el único*/
+
+/* "p:last-child" afecta únicamente al último hijo "p" */
+p:last-child{
+    text-align: end;
+}
+/* a todos mitexto2 que tengan como padre a div */
+div > p.mitexto2{
+    color: chartreuse;
+}
+/* afecta al siguiente elemento, en este caso vendrìa a ser "mitexto3" */
+p.mitexto2 + p {
+    color: cyan;
+}
+/* ~ afecta a mitexto3 y a todos los que están delante del mismo */
+p.mitexto3 ~ p{
+    font-style: italic;
+}

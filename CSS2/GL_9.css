@@ -1,0 +1,44 @@
+body{
+    border-color: red;
+    
+}
+#titulo {
+    /* font-family: Geneva, sans-serif; */
+
+    font: bold 26px Verdana, sans-serif;
+    /* color: hsl(0,0%,80%); */
+    color: rgba(200, 102, 123, 60%);
+    width: auto;
+    height: auto;
+   
+}
+#descripcion{
+    font-family: MiFuente, Helvetica, sans-serif;
+    font-size: 17px;
+    letter-spacing: 1px;
+    word-spacing: 8px;
+    /* text-indent: 5px; */
+    text-align-last: justify;
+    /* text-align-last: center; */
+    line-height: 40px;
+    vertical-align: middle;
+    /* height: 2%; */
+    height: 100px;
+    width: auto;
+    /* overflow: scroll; */
+    overflow: auto;
+    /* overflow-wrap: overflow; */
+}
+a{
+    text-decoration:none;
+    color: crimson;
+
+}
+@font-face {
+    font-family: "MiFuente";
+    src: url("font.ttf");
+}
+head{
+    margin: 30px;
+    padding: 15px;
+}

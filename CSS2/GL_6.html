@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <form name="formulario" method="get" action="procesar.php">
+            <datalist id="datos">
+                <option value="123123123" label="Teléfono 1">
+                <option value="456456456" label="Teléfono 2">
+            </datalist>
+            <p><label>Teléfono: <input type="tel" name="telefono" list="datos"></label></p>
+            <p><label>Correo: <input type="email" name="email" placeholder="correo@direc.com" required multiple></label></p>
+            <p><label>nombre: <input type="text" name="nombre" autocomplete="on"></label></p>
+            <!-- <p><label >Postal: <input pattern="[0-9]{5}" name="cp" title="Insertar numero postal"></label></p> -->
+            <p><label>Código Postal: <input pattern="[0-9]{5}" name="cp" title="Inserte su código postal"></label></p>
+            <p><label>Edad-disabled: <input type="number" value="10" name="edad" disabled></label></p>
+            <p><label>Edad-readonly: <input type="number" value="12" name="edad2" readonly></label></p>
+            <p><progress value="30" max="100" name ="bar1">0%</progress></p>
+            <p><meter value="99" name = "bar2" min="0" max="100" low="20" high="30" optimum="100">60</meter></p>
+            <p><meter value="30" name = "bar3" max="100">0%</meter></p>
+            <p><input type="submit" value="Enviar"></p>
+            <p><input type="submit" value="Grabar" formnovalidate></p>
+
+        </form>
+    </section>
+</body>
+</html>
